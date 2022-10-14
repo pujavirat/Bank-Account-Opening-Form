@@ -1,0 +1,296 @@
+<htmlinput>
+<head>
+<title>Account Opening Form</title>
+
+
+<script type="text/javascript">
+	
+	function validate(){
+
+		if(document.myForm.First_Name.value==""){
+
+			alert("Please provide First Name !");
+			document.myForm.First_Name.focus();
+			return false;
+		}
+
+		if(document.myForm.Last_Name.value==""){
+
+			alert("Please provide Last Name !");
+			document.myForm.Last_Name.focus();
+			return false;
+		}
+
+		if(document.myForm.Mobile.value==""){
+
+			alert("Please provide mobile number !!");
+			document.myForm.Mobile.focus();
+			return false;
+		}
+
+		if(document.myForm.Email.value==""){
+
+			alert("Please provide valid Email !!");
+			document.myForm.Email.focus();
+			return false;
+		}
+
+		if(document.myForm.city.value==""){
+
+			alert("Please provide city");
+			document.myForm.city.focus();
+			return false;
+		}
+
+		if(document.myForm.state.value==""){
+
+			alert("Please Enter State !!");
+			document.myForm.state.focus();
+			return false;
+		}
+
+		return(true);
+
+		}
+
+
+</script>
+
+
+
+</head>
+
+<body bgcolor="grey">
+
+	<div class="container">
+	<img src=logo.png alt="logo" width="400" height="100">
+	</div>
+
+
+
+	<form action = "#" name = "myForm" onSubmit = "return (validate())";>
+
+<h2 align = "center"> ICICI Bank Account Opening Form </h2>
+
+<h3 align= "center">FIELDS WITH *(STAR) ARE MANDATORY.Please fill all the details in CAPITAL LETTERS and use BLACK INK only.<br> (Must accompanied with Terms and Conditions) <br> CUSTOMER INFORMATION </h3>
+<hr>
+<align = "center" cellpadding="12">
+
+	<h3  style text-align="left"> Applicant Details</h3>
+
+	<label for="dropdown" class="standard-label">
+		Title<span class="required">*</span>
+		<select id="dropdown" class="standard-select" required>
+			<option value="select" disabled selected>select Title</option>
+			<option value="Mr">Mr</option>
+			<option value="Mr">Mrs</option>
+			<option value="Mr">Miss</option>
+		</select>
+	</label>
+	
+
+First Name:<input type = "text" id="First_Name" placeholder="First Name"/>
+           <span id="messages" style="color:red;"></span><br><br>
+
+ Middle Name(if applicable):<input type = "text" name="Middle_Name" placeholder="Middle Name"/>
+
+	
+ Last Name:<input type = "text" name="Last_Name" placeholder="Last Name"/>
+
+ <br><br>
+ 
+
+	 Gender : 
+    Male<input type="radio" name="Gender" value="male" /> 
+	Female<input type="radio" name="Gender" value="female" />
+	<br><br>
+
+    Moblie No. <input type="text" name="Mobile" placeholder="Moblie Number" />
+	<br><br>
+
+	Email: <input type="text" name="Email" placeholder="Email Id" />
+	<br><br>
+	
+	 DOB: <input type="date" name="DOB" placeholder="Date of birth" />
+	 <br><br>
+
+     Account Type:<select>
+		<option name="select" disabled selected>choose account</option>
+		<option name="Account">Normal</option>
+		<option name="Account">Saving</option>
+		<option name="Account">Current</option>
+		<option name="Account">RD</option>
+		<option name="Account">FD</option>
+	 </select><br><br>
+
+	 Application Type:<select>
+		<option name="select" disabled selected>choose application</option>
+		<option name="Application">New</option>
+		<option name="Application">Updated</option>
+
+	  </select> 
+	  <br><br>
+
+
+	 <hr>
+
+	 <!--Adress details-->
+
+	 <h3 align="left"> Address Details</h3>
+
+	<h4>Current Address</h4>
+
+   Address line1*:<input class="standard-inputs" type="text"></align>
+
+	Address line2: 
+	<span class="required"></span>
+	<input class="standard-inputs" type="text"></input>
+
+    City :<span class="required"></span>
+	<input type="text" name="city" placeholder="City" />
+	
+
+	 State:
+	<input type="text" name="state" placeholder="State" />
+
+   Country:<input type="text" name="Country" value=""/>
+
+
+   post code: <input type="text" name="code" value=""/>
+
+   <h4>permanent Address</h4>
+
+   Address line1 : 
+   <span class="required"></span>
+   <input class="standard-inputs" type="text"></input>
+
+	Address line2: 
+	<span class="required"></span>
+	<input class="standard-inputs" type="text"></input>
+
+    City :
+	<input type="text" name="city" placeholder="City" />
+
+	 State:
+	<input type="text" name="state" placeholder="State" />
+
+   Country:<input type="text" name="Country" value=""/>
+
+
+   post code: <input type="text" name="code" value=""/>
+
+
+
+
+
+<!-- Image upload-->
+<div id="Image-upload">
+	<h3 class="small -heading">Upload your photos</h3>
+	<input type="file" id="Image-input" accept="Image/">
+	<div>
+	<img id="preview-image">
+	</div>
+
+</div>
+
+<!-- Sign upload-->
+
+<div id="sign-upload">
+	<h3 class="small -heading">Upload your sign</h3>
+	<label type="file" id="sign-input" accept="sign/">
+	<img id="preview-sign">
+	</div>
+
+
+<!-- Nominee Details-->
+
+<input id="Nominee">
+	<h3 class="small-heading">Details Of Nominee(Please fill the Nominee details)
+	</h3>
+	<label for="dropdown" class="standard-label">
+		Title<span class="required">*</span>
+		<select id="dropdown" class="standard-select" required>
+			<option value="select" disabled selected>select Title</option>
+			<option value="Mr">Mr</option>
+			<option value="Mr">Mrs</option>
+			<option value="Mr">Miss</option>
+		</select>
+	</label>
+
+    
+    Name:<input type ="textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<input type = "textbox" size="1" maxlength="1">
+	<br><br>
+	
+
+
+    <label for="dropdown" class="standard-label">
+	Relaton Type<span class="required">*</span>
+	<select id="dropdown" class="standard-select" required>
+		<option value="select" disabled selected>Relationship Type</option>
+		<option value="Mr">Father</option>
+		<option value="Mr">Mother</option>
+		<option value="Mr">Brother</option>
+		<option value="Mr">Sister</option>
+		</select>
+
+		Age<span class="required">*</span>
+        <input class="standard-input" type="text" >
+
+       
+     <div id="sign-upload">
+	<h3 class="small -heading">Upload your sign</h3>
+	<input type="file" id="sign-input" accept="sign/">
+	<div>
+	<img id="preview-sign">
+	</div>
+
+   </div>
+
+   <!--Declaration-->
+
+   <p>I/We want the name of the nominee to be printed on the passbook</p>
+   <input type="checkbox" name="">Yes<br><br>
+
+   <input type="button" onclick="alert('Proceed next')" value="click">
+   <br><br>
+
+
+   <div input class="Terms" id="conditions">
+	<h2 class="sub-headings">Terms & Conditions</h2>
+	<p>I authorize ICICI Bank to reach me via Email/SMS/Phone call/Whatsapp/other messaging or social media plateforms.I further consent to share my information on confidential basis with third parties for evaluating and processing this propsal.</p>
+	<input type="checkbox" id="info-click" name="info-request">
+  </div>
+
+
+   <align="left">
+  <input type="Submit"  Value = "Submit"  />
+</form>
+</body>
+</html>
